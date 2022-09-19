@@ -9,7 +9,7 @@ const io = require("socket.io")(server);
 
 global.io = io;
 
-const router = jsonServer.router("db.json");
+const router = jsonServer.router("./db.json");
 
 // response middleware
 router.render = (req, res) => {
